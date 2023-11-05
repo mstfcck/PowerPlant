@@ -1,0 +1,8 @@
+﻿services:
+  powerplant.api:
+    image: powerplant.api
+    build:
+      context: .
+      dockerfile: PowerPlant.Api/Dockerfile
+    ports:
+      - 8888:80
